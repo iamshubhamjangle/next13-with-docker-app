@@ -32,11 +32,11 @@ docker images
 # Get running images
 docker ps
 
-# Build docker image from Dockerfile
-docker build -t nextjs-docker-app-2 ./
+# Build docker image from Dockerfile. (-t is tag. You could have any tag name here).
+docker build -t nextjs-docker-app ./
 
 # Run docker image
-docker run -d -p 3000:3000 nextjs-docker-app-2
+docker run -d -p 3000:3000 nextjs-docker-app
 
 # Stop docker image
 docker stop <container_id>
